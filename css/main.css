@@ -13,10 +13,10 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 h1 {
     font-size: 3em;
