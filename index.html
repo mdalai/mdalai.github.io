@@ -1,26 +1,137 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Dalai Mingat</title>
+		<title>Dalai's Home Page</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<!--<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul> 
-		</nav>-->
-		<div class="container">
-    		<div class="blurb">
-        		<h1> Narendalai Mingat's Side Projects </h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		
+		<div>
+			<h1> Narendalai's Side Projects </h1>
+		</div>
+
 		<hr>
+		
+		<h3> Udacity Android Developer Nanodegree Projects </h3>	
+		<div class="rightAlign"> <p> Jan 2018 - Nov 2018 [<a href="https://graduation.udacity.com/nd801"> certificate </a> ] </p></div>
+		<ul>
+			<li><b>  TrackVan Capstone Project: </b>
+				This app is designed for van owners for tracking its usage within different drivers. 
+				For example, in a high school, the principal can be the owner of the van and use this app 
+				to track and manage the van's usage. The van can be shared between football team, soccer team, 
+				basketball team and international center.
+				List the main features of your app: 
+				  user authentication with sign in and sign out functinalities; 
+				  van admin - create, update, delete van; share van unique code to users by email or msg; 
+				  user - include, disclude van; to use a van, has to include it first; 
+				  users can do view van status, start using van, return van. 
+
+				Data persistence is accomplished by Firebase user authentication and Firebase realtime database.
+
+				[<a href = "https://github.com/mdalai/Capstone-Project">github</a>]</li>
+			<li><b> Gradle for Android and Java Final Project: </b> 
+				In this project, I created an app with multiple flavors that uses multiple libraries and 
+				Google Cloud Endpoints. The finished app will consist of four modules. 
+				A Java library that provides jokes, a Google Cloud Endpoints (GCE) project that serves those jokes, 
+				an Android Library containing an activity for displaying jokes, 
+				and an Android app that fetches jokes from the GCE module and passes them to 
+				the Android Library for display.
+			    [<a href = "https://github.com/mdalai/android-build-it-bigger">github</a>]</li>
+			<li><b>XYZ Reader App project: </b> 
+				Completed a content reading app per the starter code provided.
+			    [<a href = "https://github.com/mdalai/xyz-reader">github</a>]</li>
+			<li><b>Android Baking App project: </b> 
+				Created an app to view video recipes that incorporated media loading, verifying user interfaces with UI tests, 
+				integrated third party libraries and provided a complete UX with home screen widget. 
+				Following features are accomplished: 
+				 used MediaPlayer/Exoplayer to display videos;
+				 handled error cases in Android.
+				 added a widget to the app experience.
+				 leveraged a third-party library in the app.
+				 used Fragments to create a responsive design that works on phones and tablets.
+			    [<a href = "https://github.com/mdalai/baking-app">github</a>]</li>
+			<li><b> Popular Movies Android App: </b> 
+				Built an Android app to help users discover popular and highly rated movies on the web.
+				This app utilizes core Android user interface components and fetches movie information using themoviedb.org web API.
+				The app displays a scrolling grid of movie trailers and launches a details screen whenever a particular movie is selected. 
+				Allows users to save favorites, play trailers, and read user reviews.
+				In addition, it is optimized for tablet users.			
+			    [<a href = "https://github.com/mdalai/popular-movies-app">github</a>]</li>
+			<li><b> Sandwich Club Project:</b>
+				In this project, I completed the Sandwich Club app to show the details of each sandwich once it is selected. 
+				Built a ScrollView layout, populated its fields by parsing JSON data recieved. 
+				Utilized Android image downloading and caching library Picasso.  
+				[<a href="https://github.com/mdalai/android-sandwich-club">github</a>]</li> 
+
+		</ul>
+		
+		
+	    <hr>
+		
+		<h3> Udacity Self-Driving Car Nanodegree Projects </h3>	
+		<div class="rightAlign"> <p>Jun 2017 - Apr 2018 [<a href="https://graduation.udacity.com/nd013"> certificate </a> ] </p></div>
+		<ul>
+			<li><b>  Finding Lane Lines on the Road: </b>
+				Detected highway lane lines on a video stream. Used OpenCV image analysis techniques to identify lines, 
+				including Hough Transforms and Canny edge detection.
+				[<a href = "https://github.com/mdalai/self-driving-car-finding-lane-lines">github</a>]</li>
+			<li><b> Advanced Lane Finding: </b> 
+				Built an advanced lane-finding algorithm using distortion correction, image rectification, color transforms, and gradient thresholding. 
+				Identified lane curvature and vehicle displacement. Overcame environmental challenges such as shadows and pavement changes.
+			    [<a href = "https://github.com/mdalai/self-driving-car-advanced-line-finding">github</a>]</li>
+			<li><b>Vehicle Detection and Tracking: </b> 
+				Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), 
+				and support vector machines (SVM). Optimized and evaluated the model on video data from a automotive camera taken during highway driving.
+			    [<a href = "https://github.com/mdalai/self-driving-car-vehicle-detection">github</a>]</li>
+			<li><b>Traffic Sign Classification: </b> 
+				Built and trained a deep neural network to classify traffic signs, using TensorFlow. 
+				Experimented with different network architectures. Performed image pre-processing and validation to guard against overfitting.
+			    [<a href = "https://github.com/mdalai/self-driving-car-traffic-sign-classifier">github</a>]</li>
+			<li><b> Use Deep Learning to Clone Driving Behavior: </b> 
+				Built and trained a convolutional neural network for end-to-end driving in a simulator, 
+				using TensorFlow and Keras. Used optimization techniques such as regularization and dropout 
+				to generalize the network for driving on multiple tracks.
+			    [<a href = "https://github.com/mdalai/self-driving-car-Behavioral-Cloning">github</a>]</li>
+			<li><b> Extended Kalman Filter Project:</b>
+				Implemented an Extended Kalman Filter algorithm in C++ capable of tracking a bicycle's motion in two dimensions.
+				Managed to process Lidar and Radar generated data.
+				[<a href="https://github.com/mdalai/self-driving-car-Extended-Kalman-Filter">github</a>]</li> 
+
+
+			<li><b>Unscented Kalman Filter Project: </b>
+				Implemented an Unscented Kalman Filter algorithm in C++ capable of accurately and performantly tracking a turning object.
+				[<a href="https://github.com/mdalai/self-driving-car-Unscented-Kalman-Filter">github</a>]</li>
+			<li><b> Kidnapped Vehicle Project:</b>
+			 	Implemented a 2 dimensional particle filter in C++ capable of localizing a vehicle within desired accuracy and time.
+				[<a href="https://github.com/mdalai/self-driving-car-Kidnapped-Vehicle">github</a>]</li>
+
+			<li><b>  PID Controller Project:</b> 
+				Implemented a PID controller in C++ to maneuver a vehicle around a track.
+				[<a href="https://github.com/mdalai/self-driving-car-PID-Controller">github</a>]</li>
+			<li><b> Model Predictive Control Project: </b>
+				Implemented Model Predictive Control to drive a vehicle around a track even with additional latency between commands.
+				[<a href="https://github.com/mdalai/self-driving-car-Model-Predictive-Control">github</a>]</li>
+
+			<li><b> Path Planning Project:</b>
+				Built a path planner that navigates a vehicle through traffic on a highway. 
+				Used the concepts taught in the module - environmental prediction, behavioral planning, and trajectory generation - to build the planner.
+				[<a href="https://github.com/mdalai/self-driving-car-path-planning">github</a>]</li>
+
+			<li><b> ROS System Integration Project:</b> 
+				Utilized ROS subscribers and publishers, integrated different components of self-driving car.
+				Annotated traffic light images and generated TFRecords file for training the classifier.
+				Fine-tuned a traffic light classifier adapted TensorFlow Object Detection API, 
+				which can determine traffic light in real time in Udacity simulator.
+				[<a href="https://github.com/mdalai/self-driving-car-System-Integration">github</a>]</li>
+
+			<li><b> Semantic Segmentation Project:</b>  
+				Trained and tuned a Fully Convolutional Network to segment road images using pre-trained VGG model and Kitti Road dataset. 
+				[<a href="https://github.com/mdalai/self-driving-car-semantic-segmentation">github</a>]</li>
+
+		</ul>
+
+		<hr>
+
 		<h3> Udacity Deep Learning Nanodegree Projects </h3>  
 		<div class="rightAligh"> Jan 2017 - May 2017    [ <a href = "https://github.com/mdalai/DLND"> github</a>  |  <a href="https://graduation.udacity.com/nd101"> certificate </a>]</div>
 		
@@ -38,88 +149,24 @@
 				Built a deep convolutional generative adversarial network to generate new images of human faces.</li>
 		</ul>
 		
-	       <hr>
-		
-		<h3> Udacity Self-Driving Car Nanodegree Projects </h3>	
-		<div class="rightAlign"> <p>Jun 2017 - Apr 2018 [<a href="https://graduation.udacity.com/nd013"> certificate </a> ] </p></div>
+		<hr>
+		<h3>Hospital Management System</h3>
+		<p>Aug 2015 - March 2016 [<a href="https://github.com/mdalai/HMS">github</a>] </p>
+
 		<ul>
-			<li><b> <a href = "https://github.com/mdalai/self-driving-car-finding-lane-lines"> 
-				Finding Lane Lines on the Road </a>: </b>
-				Detected highway lane lines on a video stream. Used OpenCV image analysis techniques to identify lines, 
-				including Hough Transforms and Canny edge detection.</li>
-			<li><b> <a href = "https://github.com/mdalai/self-driving-car-advanced-line-finding"> 
-				Advanced Lane Finding </a>: </b> 
-				Built an advanced lane-finding algorithm using distortion correction, image rectification, color transforms, and gradient thresholding. 
-				Identified lane curvature and vehicle displacement. 
-				Overcame environmental challenges such as shadows and pavement changes.</li>
-			<li><b> <a href = "https://github.com/mdalai/self-driving-car-vehicle-detection"> 
-				Vehicle Detection and Tracking </a>: </b> 
-				Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), 
-				and support vector machines (SVM). 
-				Optimized and evaluated the model on video data from a automotive camera taken during highway driving.</li>
-			<li><b> <a href = "https://github.com/mdalai/self-driving-car-traffic-sign-classifier"> 
-				Traffic Sign Classification </a>: </b> 
-				Built and trained a deep neural network to classify traffic signs, using TensorFlow. 
-				Experimented with different network architectures. 
-				Performed image pre-processing and validation to guard against overfitting.</li>
-			<li><b> <a href = "https://github.com/mdalai/self-driving-car-Behavioral-Cloning"> 
-				Use Deep Learning to Clone Driving Behavior </a>: </b> 
-				Built and trained a convolutional neural network for end-to-end driving in a simulator, 
-				using TensorFlow and Keras. Used optimization techniques such as regularization and dropout 
-				to generalize the network for driving on multiple tracks.</li>
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-Extended-Kalman-Filter">
-					Extended Kalman Filter Project:  </a> </b>
-				   <ul> <li>
-					Implemented an Extended Kalman Filter algorithm in C++ capable of tracking a bicycle's motion in two dimensions.</li>
-					<li>Managed to process Lidar and Radar generated data.</li> 
-				   </ul></li>
-
-
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-Unscented-Kalman-Filter"> 
-				Unscented Kalman Filter Project: </a> </b>
-				Implemented an Unscented Kalman Filter algorithm in C++ capable of accurately and performantly tracking a turning object.</li>
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-Kidnapped-Vehicle"> Kidnapped Vehicle Project: </a> </b>
-			 Implemented a 2 dimensional particle filter in C++ capable of localizing a vehicle within desired accuracy and time.</li>
-
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-PID-Controller"> PID Controller Project: </a> </b> 
-			Implemented a PID controller in C++ to maneuver a vehicle around a track.</li>
-
-
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-Model-Predictive-Control">Model Predictive Control Project:</a> </b>
-			Implemented Model Predictive Control to drive a vehicle around a track even with additional latency between commands.</li>
-
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-path-planning">Path Planning Project: </a> </b>
-			Built a path planner that navigates a vehicle through traffic on a highway. 
-			Used the concepts taught in the module - environmental prediction, behavioral planning, and trajectory generation - to build the planner.</li>
-
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-System-Integration"> ROS System Integration Project: </a> </b> 
-			<ul>
-			<li>Utilized ROS subscribers and publishers, integrated different components of self-driving car.</li>
-			<li>Annotated traffic light images and generated TFRecords file for training the classifier.</li>
-			<li>Fine-tuned a traffic light classifier adapted TensorFlow Object Detection API, 
-			which can determine traffic light in real time in Udacity simulator.</li>
-			</ul></li>
-
-			<li><b> <a href="https://github.com/mdalai/self-driving-car-semantic-segmentation"> Semantic Segmentation Project:</a> </b>  
-			Trained and tuned a Fully Convolutional Network to segment road images using pre-trained VGG model and Kitti Road dataset. </li>
-
+			<li>Research requirements, understand workflows.</li>
+			<li>MS SQL Server database design and programming.</li>
+			<li>Develop desktop applications with VB.NET in Visual Studio.</li>
+			<li>IIS server setup, software implementation.</li>
+			<li>Realized streamlined workflow from registration, prescription, medicine to payment and receipt print.</li>
 		</ul>
-		
+
 		<hr>
-		
-		<h3> Udacity Android Developer Nanodegree Projects </h3>	
-		<div class="rightAlign"> <p> Jun 2018 - Nov 2018 [<a href="https://graduation.udacity.com/nd801"> certificate </a> ] </p></div>
-		
-		<hr>
-		
-		<h3> Hospital Management System </h3>	
-		<div class="rightAlign"> <p>Aug 2015 - May 2016 [<a href="https://graduation.udacity.com/nd013"> certificate </a> ] </p></div>
-	
 
 		<footer>
     		<ul>
         		<li><a href="mailto:mingat.dalai@gmail.com">@email me</a></li>
-        		<li><a href="https://github.com/mdalai">github.com/mdalai</a></li>
+        		<li><a href="https://github.com/mdalai">my github</a></li>
 			</ul>
 		</footer>
 	</body>
