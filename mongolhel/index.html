@@ -9,7 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Hello, world!</title>
+    <title>ᠮᠤᠭᠭᠭᠤᠯ ᠬᠡᠯᠡ</title>
   </head>
   <body>
     <div class="container">
@@ -32,14 +32,13 @@
     </div> <!-- container -->
 
     <!--
-      https://www.geeksforgeeks.org/how-to-fetch-data-from-json-file-and-display-in-html-table-using-jquery/
+      ref: https://www.geeksforgeeks.org/how-to-fetch-data-from-json-file-and-display-in-html-table-using-jquery/
     -->
     <script> 
       $(document).ready(function () { 
 
           // FETCHING DATA FROM JSON FILE 
-          $.getJSON("data/course_a.json",  
-                  function (data) { 
+          $.getJSON("data/course_a.json", function (data) { 
               var cards = ''; 
               //console.log(JSON.stringify(data));
 
@@ -50,9 +49,16 @@
                   cards += '<div class="card">'; 
                   
                   cards += '<div class="row card-img-top">'; 
-                  
-                  cards += '<div class="col-2 text-dark text-center fw-bold align-text-bottom fs-1" style="writing-mode: vertical-lr;">'
-                    + value.mongolian + '</div>';
+
+                  // following style doesn't work on Safari                  
+                  //cards += '<div class="col-2 text-dark text-center fw-bold align-text-bottom fs-1" style="writing-mode: vertical-lr;">'
+                  //  + value.mongolian + '</div>';
+
+                  // workaround but not ideal in case of squeezing size, wrting disappears.                   
+                  cards += '<div class="col-2 text-dark text-center fw-bold align-text-bottom fs-2">'
+                    + '<svg height="100%" width="100%"> <text x="20" y="-10" transform="rotate(90)">' 
+                        + value.mongolian + '</text> Sorry, your browser does not support inline SVG. </svg>'
+                    + '</div>';
 
                   cards += '<div class="col-10">'
                     + '<img src="'
