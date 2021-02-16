@@ -89,13 +89,20 @@
             
           </div>
           <div class="row card-body">
-            <div class="col-2"></div>            
+            <div class="col-2">
+              <button onclick="playAudio()">hello</button>
+            </div>            
             <div class="col-10">
               
               
-                <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                <!-- <audio controls src="assets/audios/almaraad.mp3" preload="none">
                         Your browser does not support the
                         <code>audio</code> element.
+                </audio> -->
+
+                <audio >
+                  <source src="assets/audios/alta.mp3" preload="none">
+                  Your browser does not support the
                 </audio>
               
             </div>
@@ -116,10 +123,12 @@
           </div>          
           <div class="row card-body">
             <div class="col-2 text-start  text-primary">
+              <button onclick="playAudio()">
               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
                 <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
               </svg>
+            </button>
             </div>
             <div class="col-5 text-center fs-4">冰</div>
             <div class="col-5 text-center fs-4">Ice</div>
@@ -155,6 +164,12 @@
 
    
     </div> <!-- container -->
+
+    <script>
+      function playAudio() {
+        alert("button pressed!");
+      }
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

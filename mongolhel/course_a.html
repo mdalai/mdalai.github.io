@@ -8,7 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>ᠮᠤᠭᠭᠭᠤᠯ ᠬᠡᠯᠡ - ᠴᠠᠭᠠᠨ ᠲᠤᠯᠤᠭᠤᠢ </title>
+    <title>ᠮᠤᠭᠭᠭᠤᠯ ᠬᠡᠯᠡ - ᠴᠠᠭᠠᠨ ᠲᠤᠯᠤᠭᠤᠢ - ᠠ</title>
   </head>
   <body>
     <div class="container">
@@ -27,7 +27,6 @@
       
     </div>
 
-
    
     </div> <!-- container -->
 
@@ -38,36 +37,67 @@
       $(document).ready(function () { 
 
           // FETCHING DATA FROM JSON FILE 
-          $.getJSON("data/course.json", function (data) { 
+          $.getJSON("data/course_a.json", function (data) { 
               var cards = ''; 
               //console.log(JSON.stringify(data));
 
               // ITERATING THROUGH OBJECTS 
               $.each(data, function (key, value) { 
                   //CONSTRUCTION OF ROWS HAVING DATA FROM JSON OBJECT 
-                  cards += '<div class="col-sm-4 col-lg-2 mb-4">'; 
-                  cards += '<div class="row">';                   
-                  cards += '<div class="col-3 col-sm-2"></div>'; 
-
-                  cards += '<div class="col-6 col-sm-8">' + `
-                    <a href="${value.a_url}" type="button" class="btn btn-outline-primary fw-bold fs-1">
-                      <svg height="100%" width="100%" >
-                        <text x="50" y="-30" transform="rotate(90)" >` + value.mongolian + `</text>
-                        Sorry, your browser does not support inline SVG.
-                      </svg>
-                    </a>
-                  ` + '</div>';
-
-                  cards += '<div class="col-3 col-sm-2"></div>'; 
-                  cards += '</div>';  
-                  cards += '</div>';  
+                  cards += '<div class="col-sm-6 col-lg-4 mb-4">'; 
+                  cards += '<div class="card">'; 
                   
+                  cards += '<div class="row card-img-top">'; 
+
+                  // following style doesn't work on Safari                  
+                  //cards += '<div class="col-2 text-dark text-center fw-bold align-text-bottom fs-1" style="writing-mode: vertical-lr;">'
+                  //  + value.mongolian + '</div>';
+
+                  // workaround but not ideal in case of squeezing size, wrting disappears.                   
+                  cards += '<div class="col-2 text-dark text-center fw-bold align-text-bottom fs-2">'
+                    + '<svg height="100%" width="100%"> <text x="20" y="-10" transform="rotate(90)">' 
+                        + value.mongolian + '</text> Sorry, your browser does not support inline SVG. </svg>'
+                    + '</div>';
+
+                  cards += '<div class="col-10">'
+                    + '<img src="'
+                    + value.image_uri
+                    +'" class="rounded mt-2 " width="100%" height="200"  alt="...">'
+                    + '</div>'; 
+
+                  cards += '</div>'; 
+                  
+                  cards += '<div class="row card-body">'; 
+                  
+                  cards += '<div class="col-2 text-start  text-primary">' + `
+                    <button onclick="playAudio('${value.mongolian_pronounce}')" type="button" class="btn btn-outline-primary btn-sm">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                        <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                      </svg>
+                    </button>
+                    ` + '</div>';
+                  cards += '<div class="col-5 text-center fs-4">'
+                    + value.chinese + '</div>'; 
+                  cards += '<div class="col-5 text-center fs-4">'
+                    + value.english + '</div>'; 
+
+                  cards += '</div>';  
+
+                  cards += '</div>'; 
+                  cards += '</div>'; 
               }); 
                 
               //INSERTING ROWS INTO TABLE  
               $('#json-data-pop').append(cards); 
           }); 
       }); 
+
+      function playAudio(audio_url) {
+        //alert("button pressed!" + audio_url);
+        var audio = new Audio(audio_url);
+        audio.play();
+      }
       
   </script> 
 
