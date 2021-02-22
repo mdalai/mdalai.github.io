@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Mongolian Title';
+    src: url('fonts/mngltitleotf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mongolian Art';
+    src: url('fonts/mnglartotf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mongolian White';
+    src: url('fonts/mnglwhiteotf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mongolian Writing';
+    src: url('fonts/mnglwritingotf.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.mongolian {
+    -webkit-font-feature-settings: "ccmp";
+    -webkit-writing-mode : vertical-rl;
+    -webkit-text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+}
+
+.mongolian-title-font {
+    font-family: 'Mongolian Title';
+}
+
+.mongolian-art-font {
+    font-family: 'Mongolian Art';
+}
+
+.mongolian-white-font {
+    font-family: 'Mongolian White';
+}
+
+.mongolian-writing-font {
+    font-family: 'Mongolian Writing';
+}
