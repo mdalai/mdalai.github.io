@@ -1,8 +1,32 @@
 [
-    {"mongolian": "ᠠᠯᠲᠠ", 
-        "chinese": "金", 
-        "english": "Gold", 
-        "image_uri":"https://cdn.mos.cms.futurecdn.net/FYjFKKZ65KqMgGUo2EwWER-1200-80.jpeg", 
-        "mongolian_pronounce": "assets/audios/alta.mp3"}
-
+    {
+        "mongolian": "ᠢᠮᠠᠭ᠎ᠠ", 
+        "chinese": "", 
+        "english": "Goat", 
+        "image_uri":"https://upload.wikimedia.org/wikipedia/commons/b/b1/Goat_face.jpg", 
+        "mongolian_pronounce": "data/audios/i_goat.mp3"},
+    {
+        "mongolian": "ᠢᠯᠠᠭ᠎ᠠ", 
+        "chinese": "苍蝇", 
+        "english": "Fly", 
+        "image_uri":"https://robdaykin.art/images/d6/9d/09-19-fly-eye_1024.jpg", 
+        "mongolian_pronounce": "data/audios/i_fly.mp3"},
+    {
+        "mongolian": "ᠢᠮᠵᠢ", 
+        "chinese": "", 
+        "english": "Kangaroo", 
+        "image_uri":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Kangaroo_and_joey06.jpg/802px-Kangaroo_and_joey06.jpg", 
+        "mongolian_pronounce": "data/audios/i_kangaroo.mp3"},
+    {
+        "mongolian": "ᠢᠨᠢᠶᠡᠬᠦ", 
+        "chinese": "", 
+        "english": "Smile", 
+        "image_uri":"https://snappygoat.com/b/e41970e8d37df12c4a094b73da19c8100a7a14e4", 
+        "mongolian_pronounce": "data/audios/i_smile.mp3"},
+    {
+        "mongolian": "ᠢᠯᠡᠭᠦᠷ", 
+        "chinese": "", 
+        "english": "Iron", 
+        "image_uri":"https://cdn.pixabay.com/photo/2013/07/13/11/49/iron-158742_1280.png", 
+        "mongolian_pronounce": "data/audios/i_iron.mp3"}
 ]

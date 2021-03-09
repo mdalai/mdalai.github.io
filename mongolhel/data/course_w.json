@@ -1,8 +1,32 @@
 [
-    {"mongolian": "ᠠᠯᠲᠠ", 
-        "chinese": "金", 
-        "english": "Gold", 
-        "image_uri":"https://cdn.mos.cms.futurecdn.net/FYjFKKZ65KqMgGUo2EwWER-1200-80.jpeg", 
-        "mongolian_pronounce": "assets/audios/alta.mp3"}
-
+    {
+        "mongolian": "ᠦᠬᠡᠷ", 
+        "chinese": "", 
+        "english": "Cow", 
+        "image_uri":"https://pixy.org/src/75/thumbs350/757675.jpg", 
+        "mongolian_pronounce": "data/audios/w_cow.mp3"},
+    {
+        "mongolian": "ᠦᠨᠡᠭᠡ", 
+        "chinese": "", 
+        "english": "Fox", 
+        "image_uri":"https://cdn.pixabay.com/photo/2017/08/07/00/07/fox-2597803_1280.jpg", 
+        "mongolian_pronounce": "data/audios/w_fox.mp3"},
+    {
+        "mongolian": "ᠦᠨᠳᠦᠰᠦ", 
+        "chinese": "", 
+        "english": "Root", 
+        "image_uri":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Root_Systems.svg/1024px-Root_Systems.svg.png", 
+        "mongolian_pronounce": "data/audios/w_root.mp3"},
+    {
+        "mongolian": "ᠦᠰᠦ", 
+        "chinese": "", 
+        "english": "Hair", 
+        "image_uri":"https://cdn.pixabay.com/photo/2020/05/28/15/13/hair-5231490_1280.jpg", 
+        "mongolian_pronounce": "data/audios/w_hair.mp3"},
+    {
+        "mongolian": "ᠦᠷ᠎ᠡ", 
+        "chinese": "", 
+        "english": "seeds", 
+        "image_uri":"https://pixnio.com/free-images/2019/01/21/2019-01-21-12-00-15-1200x800.jpg", 
+        "mongolian_pronounce": "data/audios/w_seeds.mp3"}
 ]

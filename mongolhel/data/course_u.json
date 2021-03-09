@@ -1,8 +1,32 @@
 [
-    {"mongolian": "ᠠᠯᠲᠠ", 
-        "chinese": "金", 
-        "english": "Gold", 
-        "image_uri":"https://cdn.mos.cms.futurecdn.net/FYjFKKZ65KqMgGUo2EwWER-1200-80.jpeg", 
-        "mongolian_pronounce": "assets/audios/alta.mp3"}
-
+    {
+        "mongolian": "ᠤᠰᠤ", 
+        "chinese": "", 
+        "english": "Water", 
+        "image_uri":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Water_drop_impact_on_a_water-surface_-_%281%29.jpg/1600px-Water_drop_impact_on_a_water-surface_-_%281%29.jpg", 
+        "mongolian_pronounce": "data/audios/u_water.mp3"},
+    {
+        "mongolian": "ᠤᠯᠠᠭᠠᠨ", 
+        "chinese": "", 
+        "english": "Red", 
+        "image_uri":"https://pixy.org/src/11/thumbs350/113529.jpg", 
+        "mongolian_pronounce": "data/audios/u_red.mp3"},
+    {
+        "mongolian": "ᠤᠨᠲᠠᠬᠤ", 
+        "chinese": "", 
+        "english": "Sleep", 
+        "image_uri":"https://cdn.pixabay.com/photo/2020/12/11/21/15/sleep-5823849_1280.png", 
+        "mongolian_pronounce": "data/audios/u_sleep.mp3"},
+    {
+        "mongolian": "ᠤᠩᠰᠢᠬᠤ", 
+        "chinese": "", 
+        "english": "Read", 
+        "image_uri":"https://cdn.pixabay.com/photo/2017/10/11/16/58/read-a-book-2841691_1280.jpg", 
+        "mongolian_pronounce": "data/audios/u_read.mp3"},
+    {
+        "mongolian": "ᠤᠲᠠᠰᠤ", 
+        "chinese": "针线", 
+        "english": "String", 
+        "image_uri":"https://c.pxhere.com/photos/16/24/thread_creativity_sewing_handmade_needlework_hobby-626093.jpg!d", 
+        "mongolian_pronounce": "data/audios/u_string.mp3"}
 ]

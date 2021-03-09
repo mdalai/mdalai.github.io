@@ -1,8 +1,38 @@
 [
-    {"mongolian": "ᠠᠯᠲᠠ", 
-        "chinese": "金", 
-        "english": "Gold", 
-        "image_uri":"https://cdn.mos.cms.futurecdn.net/FYjFKKZ65KqMgGUo2EwWER-1200-80.jpeg", 
-        "mongolian_pronounce": "assets/audios/alta.mp3"}
-
+    {
+        "mongolian": "ᠡᠷᠪᠡᠬᠡᠢ", 
+        "chinese": "", 
+        "english": "Butterfly", 
+        "image_uri":"https://upload.wikimedia.org/wikipedia/commons/6/65/Blue_morpho_butterfly.jpg", 
+        "mongolian_pronounce": "data/audios/e_butterfly.mp3"},
+    {
+        "mongolian": "ᠡᠭᠦᠷ", 
+        "chinese": "", 
+        "english": "Nest", 
+        "image_uri":"https://cdn.pixabay.com/photo/2018/01/16/16/27/the-nest-3086269_1280.jpg", 
+        "mongolian_pronounce": "data/audios/e_nest.mp3"},
+    {
+        "mongolian": "ᠡᠪᠡᠰᠦ", 
+        "chinese": "", 
+        "english": "Grass", 
+        "image_uri":"https://pixy.org/src/458/thumbs350/4587424.jpg", 
+        "mongolian_pronounce": "data/audios/e_grass.mp3"},
+    {
+        "mongolian": "ᠡᠭᠦᠯᠡ", 
+        "chinese": "", 
+        "english": "Cloud", 
+        "image_uri":"https://cdn.pixabay.com/photo/2019/01/18/20/08/cloud-3940561_1280.jpg", 
+        "mongolian_pronounce": "data/audios/e_cloud.mp3"},
+    {
+        "mongolian": "ᠡᠪᠡᠷ", 
+        "chinese": "", 
+        "english": "Horn", 
+        "image_uri":"https://pixy.org/src/465/thumbs350/4655149.jpg", 
+        "mongolian_pronounce": "data/audios/e_horn.mp3"},
+    {
+        "mongolian": "ᠡᠯᠵᠢᠭᠡ", 
+        "chinese": "", 
+        "english": "Donkey", 
+        "image_uri":"https://pixnio.com/free-images/2019/01/23/2019-01-23-10-02-00-1200x797.jpg", 
+        "mongolian_pronounce": "data/audios/e_donkey.mp3"}
 ]

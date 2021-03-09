@@ -1,8 +1,32 @@
 [
-    {"mongolian": "ᠠᠯᠲᠠ", 
-        "chinese": "金", 
-        "english": "Gold", 
-        "image_uri":"https://cdn.mos.cms.futurecdn.net/FYjFKKZ65KqMgGUo2EwWER-1200-80.jpeg", 
-        "mongolian_pronounce": "assets/audios/alta.mp3"}
-
+    {
+        "mongolian": "ᠣᠳᠣ", 
+        "chinese": "", 
+        "english": "Star", 
+        "image_uri":"https://pixy.org/src/12/thumbs350/120815.jpg", 
+        "mongolian_pronounce": "data/audios/o_star.mp3"},
+    {
+        "mongolian": "ᠣᠩᠭᠣᠴᠠ", 
+        "chinese": "", 
+        "english": "Boat", 
+        "image_uri":"https://g2insuranceservices.com/wp-content/uploads/2018/08/boat-ins-870x500.jpg", 
+        "mongolian_pronounce": "data/audios/o_boat.mp3"},
+    {
+        "mongolian": "ᠣᠷᠣᠢ", 
+        "chinese": "", 
+        "english": "Night", 
+        "image_uri":"https://pixy.org/src2/590/thumbs350/5900109.jpg", 
+        "mongolian_pronounce": "data/audios/o_night.mp3"},
+    {
+        "mongolian": "ᠤᠢᠮᠤᠰᠤ", 
+        "chinese": "", 
+        "english": "Socks", 
+        "image_uri":"https://pixy.org/src/51/thumbs350/514603.jpg", 
+        "mongolian_pronounce": "data/audios/o_socks.mp3"},
+    {
+        "mongolian": "ᠣᠷᠴᠢᠯᠠᠩ", 
+        "chinese": "", 
+        "english": "Universe", 
+        "image_uri":"https://pixy.org/src2/671/thumbs350/6719052.jpg", 
+        "mongolian_pronounce": "data/audios/o_universe.mp3"}
 ]
