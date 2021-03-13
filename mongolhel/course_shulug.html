@@ -30,19 +30,17 @@
       <a href="course_o.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary"> ᠤ </a>
       <a href="course_u.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary"> ᠤ </a>
       <a href="course_v.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary"> ᠥ </a>
-      <a href="course_w.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary active"> ᠥ </a>
-      <a href="course_shulug.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary"> ᠰᠢᠯᠦᠭ </a>
+      <a href="course_w.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary"> ᠥ </a>
+      <a href="course_shulug.html" class="mongolian mongolian-writing-font align-middle btn btn-outline-secondary active"> ᠰᠢᠯᠦᠭ </a>
     </div>
     <hr>
     <div class="row" data-masontry='{"percentPosition": true}' id="json-data-pop">
 
       <!--CONTENT HERER-->
-      
+
+
     </div>
 
-    <footer class="footer mt-auto py-3 text-end text-secondary">
-      <p> @@All images are from Internet that are under Creative Commons license@@</p>
-    </footer>
 
     </div> <!-- container -->
 
@@ -53,7 +51,7 @@
       $(document).ready(function () { 
 
           // FETCHING DATA FROM JSON FILE 
-          $.getJSON("data/course_w.json", function (data) { 
+          $.getJSON("data/course_shulug.json", function (data) { 
               var cards = ''; 
               //console.log(JSON.stringify(data));
 
@@ -65,32 +63,25 @@
                   
                   cards += '<div class="row card-img-top">'; 
                  
-                  cards += '<div class="col-2 text-dark text-center fw-bold fs-1 mongolian mongolian-title-font">'
-                    + value.mongolian + '</div>';
+                  cards += '<div class="col-2 text-dark text-center fs-4 mongolian mongolian-title-font">'
+                    + value.title + '</div>';
 
-                  cards += '<div class="col-10">'
-                    + '<img src="'
-                    + value.image_uri
-                    +'" class="rounded mt-2 " width="100%" height="200"  alt="...">'
+                  cards += '<div class="col-10 text-dark align-text-top py-3 fs-5 mongolian mongolian-writing-font">'
+                    + process_array_of_lines(value.lines) 
                     + '</div>'; 
 
                   cards += '</div>'; 
                   
                   cards += '<div class="row card-body">'; 
                   
-                  cards += '<div class="col-2 text-start  text-primary">' + `
+                  cards += `
                     <button onclick="playAudio('${value.mongolian_pronounce}')" type="button" class="btn btn-outline-primary btn-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
                         <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
                       </svg>
                     </button>
-                    ` + '</div>';
-                  cards += '<div class="col-5 text-center fs-4">'
-                    + value.chinese + '</div>'; 
-                  cards += '<div class="col-5 text-center fs-4">'
-                    + value.english + '</div>'; 
-
+                    `;
                   cards += '</div>';  
 
                   cards += '</div>'; 
@@ -106,6 +97,34 @@
         //alert("button pressed!" + audio_url);
         var audio = new Audio(audio_url);
         audio.play();
+      }
+
+      function process_array_of_lines(lines) {
+        let space_after_x_lines = 4;
+        let ret_val = "";
+        let start_space = "";
+        let k = 0;  // only even numbers add space
+
+        var i;
+        for (i = 0; i < lines.length; i++) {          
+          ret_val += start_space + lines[i] + "<br>";
+
+          if ( (i+1) % space_after_x_lines == 0 ) {            
+            start_space = "\xa0\xa0";
+
+            k += 1;
+            if (k % 2 == 0) {
+              start_space = "";
+            }
+          }
+
+          // following can add space between lines
+          // if ( (i+1) % space_after_x_lines == 0 ) {
+          //   ret_val += "<br>";
+          // }
+        } 
+
+        return ret_val;
       }
       
   </script> 

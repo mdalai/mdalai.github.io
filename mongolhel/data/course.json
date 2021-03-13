@@ -33,5 +33,10 @@
         "english": "v", 
         "image_uri":"", 
         "a_url": "./course_w.html",
-        "mongolian_pronounce": "a"}
+        "mongolian_pronounce": "a"},
+    {"mongolian": "ᠰᠢᠯᠦᠭ", 
+        "english": "Poem", 
+        "image_uri":"", 
+        "a_url": "./course_shulug.html",
+        "mongolian_pronounce": ""}
 ]
